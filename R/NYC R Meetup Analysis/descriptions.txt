@@ -1,0 +1,119 @@
+This first meeting will be your opportunity to help shape the direction for this group.
+
+With recent exposure in the NY Times, R is become less of an obscure tool confined to academia. The R-SIG-Finance list is full of New Yorkers who apply R in financial settings. Inside Google, Facebook and other data intensive companies, R plays an important role in helping analysts understand ecosystems.
+
+And R can be a lot of fun to use too. A powerful, and sometimes painful, mix of functional, imperative and object-oriented programming - the learning curve is steep and many things don't work as one would expect. Given this, I find it terribly useful to keep in touch with other R programmers as I'm always learning new tricks and improving my skills.
+
+Meeting Agenda:
+
+1. Introduction to R
+2. Machine Learning in R
+3. Whit Armstrong will talk about his Financial Time Series package
+4. Suggestions for future meetings discussion
+5. General R Q&A
+
+I hope to see you there.
+
+Many people use R as a desktop application, limited to the resources of the machine on which it runs. For datasets larger than RAM, or for computationally intensive operations this can be quite limiting. There are a number of approaches used to break through the barriers imposed by running R on a single machine. The High Performance Computing view on CRAN provides an overview of some of these techniques: http://cran.r-project...
+
+Presentations:
+
+
+    * Shane Conway - Best practices for efficient code in R
+    * John Myles White - Using R in a clustered environment with SNOW / Rmpi
+    * David Rosenberg - HadoopStreaming package
+    * Steve Weston - REvolution Computing's foreach and iterator optimized code.
+    
+    For this meetup we will be going through a series of quick 5-minute presentations. Each presentation will cover a subset of interesting functions that make our lives easier. After these presentations we will have Q&A session whereby people can talk about problems they are currently having and as a group we can try to solve them.
+
+    Please join in the discussion on our mailing list as we put together a list of lightning presentation topics. So far we have:
+
+
+        * Joshua Reich - match(), merge() and aggregate()
+        * Oksana - apply()
+        * James Lam - JGR - Java GUI for R
+        * Shane Conway - Debugging in R
+
+
+    Please Note: We will need to know your full name for admission into the NYU venue. If you are uncomfortable with sharing your name to the meetup community, please email us so that we can add your name to the security list.
+
+    Still hammering out the details, but it is likely that we will have two presenters, Jake Hofman and Suresh Velagapundi - who will discuss both the nature and and application of Bayesian methods both from a theoretical perspective and through applied examples in R.
+
+    Jake will present:
+
+    Background
+
+
+        * Conditional probability & Bayes' Rule
+        * Treating parameters as random variables & putting distributions on them
+        * Bayesian inference: from priors & likelihoods to posteriors
+
+
+    From Principles to Practice
+
+
+        * Simple plan; difficult to execute (normalization)
+        * Resort to approximation methods (variational & MCMC)
+        * Model selection / complexity control a la Bayes (time permitting)
+        
+        This month's meetup will focus on the applications of R to academic research. Econometrics and social network analysis have formed the methodological foundation for most contemporary empirical social science research. As such, there are several R packages for performing this type of analysis. Andrew Little and Drew Conway of the Department of Politics at NYU will present a brief overview of a few of the most useful packages in this space.
+
+        Econometrics
+        Andrew will discuss two econometric packages developed by Gary King of Harvard, and how he has used them in his research.
+
+
+            * Zelig - a single, easy-to-use package that can estimate, help interpret, and present the results of a large range of statistical methods.
+            * MatchIt - implements a wide range of sophisticated matching methods, making it possible to greatly reduce the dependence of causal inferences on hard-to-justify, but commonly made, statistical modeling assumptions.
+
+        Social Network Analysis
+        Drew will discuss network analysis in R and provide a an overview of how to perform it through example. The R package Drew will review is igraph.
+
+
+            * igraph - library for complex network research
+            
+            
+            This month's lineup will include
+
+
+                * Shane Conway presenting an overview of the widely used R packages for financial analysis
+                * Whit Armstrong will walk through factor modelling for fixed income instrument pricing
+                * A panel discussion about R in finance
+                
+                "ggplot2 is a plotting system for R, based on the grammar of graphics, which tries to take the good parts of base and lattice graphics and none of the bad parts. It takes care of many of the fiddly details that make plotting a hassle (like drawing legends) as well as providing a powerful model of graphics that makes it easy to produce complex multi-layered graphics."
+
+                From: http://had.co.nz/ggpl...
+
+                One of the great things about R is the inbuilt plotting and data exploration tools. Having this all in one spot is fantastic. However, when it comes to print ready graphics, the base graphics system can be a nightmare to get right. ggplot is a widely used alternative to base and lattice graphics, written by Hadley Wickham, that addresses many of the shortcomings of base and lattice.
+
+                In this meetup we will cover:
+
+
+
+                    * A short introduction to graphics in R & how the grammar of graphics differs from base. (Josh Reich)
+                    * GGPlot - Overview & tutorial (Harlan Harris)
+                    * Graphics Q&A + Show & Tell. (Drew Conway)
+                    
+                    
+                    The votes are in, and by a slim margin the group has decided that we will focus on how R translates among multiple languages for the January meetup. As such, during this meetup we will discuss how basic programming functions, operations and paradigms translate between R and four other popular programming languages. Given the tight margin in the voting, however, we will also spend slightly more time discussing Python and R.
+
+                    Here is the tentative schedule:
+
+
+                        * Python - Drew Conway
+                        * Matlab - Harlan Harris
+                        * SAS - Georgette Asherman
+                        * SQL - Josh Reich
+                        * Incanter - Shane Conway
+
+                    As you can see, we are looking for two (or more) volunteers to discuss how Python and Matlab commands translate into R. If you have expertise and are interested in giving a talk please let us know!
+
+
+                    Spatial analysis is a cutting edge set of techniques and methodologies used to analyze data when observations have attributes in space and/or time. As many of these tools are new and under constant development, there are several R packages that can support spatial analysis, or are designed specifically for it. This month, John Myles-White will present a review of the intuitions, assumptions and mathematics of spatial analysis, then review the relevant tools in R with examples.
+
+                    As a bonus, John and other team members will provide a brief review of some of the ways the NYC AnalyticsX Prize team is using spatial analysis in R for the competition.
+
+                    Jay Emerson and Michael Kane; Yale University - Department of Statistics, will go through the basics of R's package system, and will demonstrate the process of creating, checking, and building a simple package.
+
+                    The talk will touch upon the use of S3 and S4 (if you don't know about them, don't worry about it) and the inclusion of C/C++ code (if you're not into C/C++, don't worry about it). As time permits, the presenters may introduce a range of additional topics, such as (a) the difference between .C() and .Call(), (b) our approach to handling massive matrices (potentially exceeding available RAM, and potentially shared across R processes), or (c) very elegant tools for parallel computing (package "foreach" by Steve Weston). Each of these latter topics relate to package design in interesting ways.
+
+                    Note: given the success of the pre-meetup networking at the February meetup, we will again have some coffee and snacks starting at 6:15pm, and the talks will begin promptly at 7pm. As before, we are asking for a donation of $5.00 from each member to cover the cost of catering. You may make your donation now using PayPal, or in cash at the meetup.
