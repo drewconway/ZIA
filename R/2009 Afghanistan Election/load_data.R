@@ -38,13 +38,13 @@ for(c in 2:4) {pop.2009[,c]<-pop.2009[,c]*1000} # Get data in 1,000
 # Merge data to associate incidents with voter turnout
 full.data<-merge(incidents,centerpoints,by.all=c("lon","lat","Dist_Name"))
 # Create df of voter turnout data aggregated by the district level
-dist.sums<-ddply(poll.nums,.(Province,Dist_ID),summarise,Est_votes=sum(Estimated.Voters),
-    Total_PS=sum(Total.PS),Male=sum(Male),Female=sum(Female),Kuchi=sum(Kuchi))
+dist.sums<-ddply(poll.nums,.(Province,Dist_ID),summarise,Est_votes=sum(Estimated.Voters,na.rm=TRUE),
+    Total_PS=sum(Total.PS,na.rm=TRUE),Male=sum(Male,na.rm=TRUE),Female=sum(Female,na.rm=TRUE),Kuchi=sum(Kuchi,na.rm=TRUE))
 full.data<-merge(full.data,dist.sums,by.all=c("Dist_ID"))
 
 # Create province level aggregation for per-captia voter turnout calculation
-prov.data<-ddply(full.data,.(Province,Prov_ID),summarise,Inc_2009=sum(X2009),Est_votes=sum(Est_votes),
-    Total_PS=sum(Total_PS),Male=sum(Male),Female=sum(Female),Kuchi=sum(Kuchi))
+prov.data<-ddply(full.data,.(Province,Prov_ID),summarise,Inc_2009=sum(X2009,na.rm=TRUE),Est_votes=sum(Est_votes,na.rm=TRUE),
+    Total_PS=sum(Total_PS,na.rm=TRUE),Male=sum(Male,na.rm=TRUE),Female=sum(Female,na.rm=TRUE),Kuchi=sum(Kuchi,na.rm=TRUE))
 # Merge in population data
 prov.data<-merge(prov.data,pop.2009,by.x="Province",by.y="Provinces")
 names(prov.data)<-c("Province","Prov_ID","Inc_2009","Est_votes","Total_PS","Male.votes","Femal.votes",
