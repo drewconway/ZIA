@@ -14,10 +14,10 @@
 # All rights reserved.                                                         
 
 # Load libraries and data
-# source("load_data.R") # Only run if editing data load
+source("load_data.R") # Only run if editing data load
 
-full.data<-read.csv("dist_violence_voter_turnout_2009.csv")
-prov.data<-read.csv("prov_violence_voter_turnout_2009.csv")
+# full.data<-read.csv("dist_violence_voter_turnout_2009.csv")
+# prov.data<-read.csv("prov_violence_voter_turnout_2009.csv")
 
 # Create some basic visualizations of district and province level data
 prov.lm<-ggplot(prov.data,aes(y=Est_votes/Total.pop,x=Inc_2009/Total.pop))+
