@@ -1,0 +1,549 @@
+*network Event-by-Event
+*vertices 313
+1 "APHG_Breakfast" 0.000000 0.000000 ellipse 
+2 "CAMRA" 0.000000 0.000000 ellipse 
+3 "Macmillan_Cancer_Relief" 0.000000 0.000000 ellipse 
+4 "Thomas_Gareth R" 0.000000 0.000000 ellipse 
+5 "British_American_Parliamentary_Group" 0.000000 0.000000 ellipse 
+6 "Networking_For_Industry" 0.000000 0.000000 ellipse 
+7 "CPA" 0.000000 0.000000 ellipse 
+8 "Royal_Over-Seas_League" 0.000000 0.000000 ellipse 
+9 "P_&_S_Committee" 0.000000 0.000000 ellipse 
+10 "Association_of_British_Insurers" 0.000000 0.000000 ellipse 
+11 "Sayeed_Jonathan" 0.000000 0.000000 ellipse 
+12 "4th_July_Dng_Club" 0.000000 0.000000 ellipse 
+13 "Pound_Stephen" 0.000000 0.000000 ellipse 
+14 "Best_Practice_Challenge_Judges_Dinner" 0.000000 0.000000 ellipse 
+15 "One_Nation" 0.000000 0.000000 ellipse 
+16 "Gwynne_Andrew" 0.000000 0.000000 ellipse 
+17 "Efford_Clive" 0.000000 0.000000 ellipse 
+18 "George_Bruce" 0.000000 0.000000 ellipse 
+19 "Cider_Group" 0.000000 0.000000 ellipse 
+20 "Adult_Learners_Week" 0.000000 0.000000 ellipse 
+21 "Labour_Friends_of_Israel" 0.000000 0.000000 ellipse 
+22 "Milton_Anne" 0.000000 0.000000 ellipse 
+23 "The_Westminster_Club" 0.000000 0.000000 ellipse 
+24 "Parliamentary_&_Scientific_Committee" 0.000000 0.000000 ellipse 
+25 "Hurd_Nick" 0.000000 0.000000 ellipse 
+26 "Natural_England" 0.000000 0.000000 ellipse 
+27 "The_National_Trust" 0.000000 0.000000 ellipse 
+28 "Campbell_Alan" 0.000000 0.000000 ellipse 
+29 "Raynsford_Nick" 0.000000 0.000000 ellipse 
+30 "Healey_John" 0.000000 0.000000 ellipse 
+31 "Hoban_Mark" 0.000000 0.000000 ellipse 
+32 "Jones_Martyn" 0.000000 0.000000 ellipse 
+33 "British_Marine_Federation" 0.000000 0.000000 ellipse 
+34 "Tipping_Paddy" 0.000000 0.000000 ellipse 
+35 "Beating_Bowel_Cancer" 0.000000 0.000000 ellipse 
+36 "British_Paralympic_Association" 0.000000 0.000000 ellipse 
+37 "Small_Bus_Bureau" 0.000000 0.000000 ellipse 
+38 "Moffatt_Laura" 0.000000 0.000000 ellipse 
+39 "Baker_Norman" 0.000000 0.000000 ellipse 
+40 "British_Caribbean_Association" 0.000000 0.000000 ellipse 
+41 "Lansley_Andrew" 0.000000 0.000000 ellipse 
+42 "O'Hara_Eddie" 0.000000 0.000000 ellipse 
+43 "Saffron_Walden_Conservative_Association" 0.000000 0.000000 ellipse 
+44 "Volunteer_Reading_Help" 0.000000 0.000000 ellipse 
+45 "Merron_Gillian" 0.000000 0.000000 ellipse 
+46 "Mole_Valley_Conservative_Association" 0.000000 0.000000 ellipse 
+47 "Inst_of_Insurance_Brokers" 0.000000 0.000000 ellipse 
+48 "Westminster_Club" 0.000000 0.000000 ellipse 
+49 "The_Parliamentary_Club" 0.000000 0.000000 ellipse 
+50 "Robertson_Laurence" 0.000000 0.000000 ellipse 
+51 "Field_Mark" 0.000000 0.000000 ellipse 
+52 "Action_for_Blind_People" 0.000000 0.000000 ellipse 
+53 "West_Midlands_Police_Federation" 0.000000 0.000000 ellipse 
+54 "The_Marketing_Society" 0.000000 0.000000 ellipse 
+55 "Darrick_Wood_School" 0.000000 0.000000 ellipse 
+56 "Corporate_Government" 0.000000 0.000000 ellipse 
+57 "Together_in_Mission" 0.000000 0.000000 ellipse 
+58 "Wyatt_Derek" 0.000000 0.000000 ellipse 
+59 "Portcullis_Club" 0.000000 0.000000 ellipse 
+60 "Scottish_&_Newcastle_Dinner" 0.000000 0.000000 ellipse 
+61 "Morgan_Allen_Moore" 0.000000 0.000000 ellipse 
+62 "O'Brien_Stephen" 0.000000 0.000000 ellipse 
+63 "All_Party_Corporate_Governance_Group" 0.000000 0.000000 ellipse 
+64 "Universities_UK" 0.000000 0.000000 ellipse 
+65 "Sutcliffe_Gerry" 0.000000 0.000000 ellipse 
+66 "BBC_Group" 0.000000 0.000000 ellipse 
+67 "Bombardier_Transportation" 0.000000 0.000000 ellipse 
+68 "Energy_Policy_Dinner" 0.000000 0.000000 ellipse 
+69 "Ridgehill_Housing_Association" 0.000000 0.000000 ellipse 
+70 "Gladestone_Group" 0.000000 0.000000 ellipse 
+71 "Leicestershire_Law_Society" 0.000000 0.000000 ellipse 
+72 "PGL_Surrey" 0.000000 0.000000 ellipse 
+73 "Jones_Lynne" 0.000000 0.000000 ellipse 
+74 "Simpson_Alan" 0.000000 0.000000 ellipse 
+75 "Post_Magazine" 0.000000 0.000000 ellipse 
+76 "Football_Foundation" 0.000000 0.000000 ellipse 
+77 "Nominet" 0.000000 0.000000 ellipse 
+78 "Merseyside_Police" 0.000000 0.000000 ellipse 
+79 "Fitzpatrick_Jim" 0.000000 0.000000 ellipse 
+80 "Corporate_Governance_Forum" 0.000000 0.000000 ellipse 
+81 "Chartered_Inst_of_Housing" 0.000000 0.000000 ellipse 
+82 "SSB_Parliamentary_Breakfast" 0.000000 0.000000 ellipse 
+83 "Building_Magazine" 0.000000 0.000000 ellipse 
+84 "Westminster_Club_Dinner" 0.000000 0.000000 ellipse 
+85 "1949_Club" 0.000000 0.000000 ellipse 
+86 "Clelland_David" 0.000000 0.000000 ellipse 
+87 "Link_Lunch" 0.000000 0.000000 ellipse 
+88 "Lilley_Peter" 0.000000 0.000000 ellipse 
+89 "Arrhythmia_Alliance" 0.000000 0.000000 ellipse 
+90 "Cash_William" 0.000000 0.000000 ellipse 
+91 "Franco-British_Society" 0.000000 0.000000 ellipse 
+92 "Hollobone_Philip" 0.000000 0.000000 ellipse 
+93 "Inst_of_Legal_Executives" 0.000000 0.000000 ellipse 
+94 "3M" 0.000000 0.000000 ellipse 
+95 "Strangers_Gallery" 0.000000 0.000000 ellipse 
+96 "Fabian_Society" 0.000000 0.000000 ellipse 
+97 "Randall_John" 0.000000 0.000000 ellipse 
+98 "Gale_Roger" 0.000000 0.000000 ellipse 
+99 "NWDA" 0.000000 0.000000 ellipse 
+100 "Kemp_Fraser" 0.000000 0.000000 ellipse 
+101 "Cunningham_Jim" 0.000000 0.000000 ellipse 
+102 "Walley_Joan" 0.000000 0.000000 ellipse 
+103 "LSE" 0.000000 0.000000 ellipse 
+104 "English_UK" 0.000000 0.000000 ellipse 
+105 "Redwood_John" 0.000000 0.000000 ellipse 
+106 "European_Research_Group" 0.000000 0.000000 ellipse 
+107 "Wright _Iain" 0.000000 0.000000 ellipse 
+108 "Welwyn_Hatfield_Parliamentary_Club" 0.000000 0.000000 ellipse 
+109 "Parliamentary_Beer_Group" 0.000000 0.000000 ellipse 
+110 "Women_in_Bus" 0.000000 0.000000 ellipse 
+111 "The_Trefoil_Guild" 0.000000 0.000000 ellipse 
+112 "Turner_Andrew" 0.000000 0.000000 ellipse 
+113 "Visit_to_Houses_of_Parliament" 0.000000 0.000000 ellipse 
+114 "Bosworth_Cons_Assoc" 0.000000 0.000000 ellipse 
+115 "APPG_for_Town_Centre_Management" 0.000000 0.000000 ellipse 
+116 "Ainsworth_Peter" 0.000000 0.000000 ellipse 
+117 "Patrons_Club" 0.000000 0.000000 ellipse 
+118 "Baird_Vera" 0.000000 0.000000 ellipse 
+119 "Hayes_John" 0.000000 0.000000 ellipse 
+120 "Gapes_Mike" 0.000000 0.000000 ellipse 
+121 "Cricket_Group" 0.000000 0.000000 ellipse 
+122 "Wareing_Robert" 0.000000 0.000000 ellipse 
+123 "Mahmood_Khalid" 0.000000 0.000000 ellipse 
+124 "Bacon_Richard" 0.000000 0.000000 ellipse 
+125 "London_Labour_Health_Lunch" 0.000000 0.000000 ellipse 
+126 "Tobacco_Workers_Alliance" 0.000000 0.000000 ellipse 
+127 "East_Berks_Portcullis_Club" 0.000000 0.000000 ellipse 
+128 "Meale_Alan" 0.000000 0.000000 ellipse 
+129 "NFI" 0.000000 0.000000 ellipse 
+130 "Alzheimer's_Society" 0.000000 0.000000 ellipse 
+131 "Veolia_Water_UK" 0.000000 0.000000 ellipse 
+132 "Tree_Council" 0.000000 0.000000 ellipse 
+133 "McDonnell_John" 0.000000 0.000000 ellipse 
+134 "Cancer_Research" 0.000000 0.000000 ellipse 
+135 "Dairy_UK_Summer_Reception" 0.000000 0.000000 ellipse 
+136 "Faversham_&_Mid_Kent_Cons_Assoc" 0.000000 0.000000 ellipse 
+137 "Disability_Rights_Commission" 0.000000 0.000000 ellipse 
+138 "World_Asthma_Day" 0.000000 0.000000 ellipse 
+139 "Red_Balloon_Function" 0.000000 0.000000 ellipse 
+140 "Beating_Bowl_Cancer" 0.000000 0.000000 ellipse 
+141 "The_Old_Giggleswickian_Club_Dinner" 0.000000 0.000000 ellipse 
+142 "Hamilton MP_Fabian" 0.000000 0.000000 ellipse 
+143 "Syms_Robert" 0.000000 0.000000 ellipse 
+144 "Walker_Charles" 0.000000 0.000000 ellipse 
+145 "English_UK_Parliamentary_Reception" 0.000000 0.000000 ellipse 
+146 "Inst_of_Sales_Promotion" 0.000000 0.000000 ellipse 
+147 "Parliamentary_Club" 0.000000 0.000000 ellipse 
+148 "Fourth_of_July_Dng_Club" 0.000000 0.000000 ellipse 
+149 "Cameron_David" 0.000000 0.000000 ellipse 
+150 "Hereford_Parliamentary_Bus_Club" 0.000000 0.000000 ellipse 
+151 "Huhne_Chris" 0.000000 0.000000 ellipse 
+152 "Cricket_Club" 0.000000 0.000000 ellipse 
+153 "Willetts_David" 0.000000 0.000000 ellipse 
+154 "Davidson_Ian" 0.000000 0.000000 ellipse 
+155 "Follett_Hon Barbara" 0.000000 0.000000 ellipse 
+156 "Cormack_Sir Patrick" 0.000000 0.000000 ellipse 
+157 "CBI_Wales_Dinner" 0.000000 0.000000 ellipse 
+158 "TBC" 0.000000 0.000000 ellipse 
+159 "Scarborough_41_Club" 0.000000 0.000000 ellipse 
+160 "Countryside_Alliance" 0.000000 0.000000 ellipse 
+161 "Willis_Phil" 0.000000 0.000000 ellipse 
+162 "Stringer_Graham" 0.000000 0.000000 ellipse 
+163 "TCPA" 0.000000 0.000000 ellipse 
+164 "Noise_Abatement_Society" 0.000000 0.000000 ellipse 
+165 "Key_Robert" 0.000000 0.000000 ellipse 
+166 "Bottomley_Peter J" 0.000000 0.000000 ellipse 
+167 "AOL_Summer_Reception" 0.000000 0.000000 ellipse 
+168 "Blears_Hazel" 0.000000 0.000000 ellipse 
+169 "Loughton_Tim" 0.000000 0.000000 ellipse 
+170 "Health_&_Safety_Commission" 0.000000 0.000000 ellipse 
+171 "Fire_Safety" 0.000000 0.000000 ellipse 
+172 "Chartered_Inst_of_Marketing" 0.000000 0.000000 ellipse 
+173 "Green_Damian" 0.000000 0.000000 ellipse 
+174 "Westminster_Dng_Club_Dinner" 0.000000 0.000000 ellipse 
+175 "Wright_Anthony" 0.000000 0.000000 ellipse 
+176 "Flight_Howard" 0.000000 0.000000 ellipse 
+177 "Winterton_Lady Ann" 0.000000 0.000000 ellipse 
+178 "TCPA_Annual_Reception" 0.000000 0.000000 ellipse 
+179 "Burns_Supper" 0.000000 0.000000 ellipse 
+180 "Bayley_Hugh" 0.000000 0.000000 ellipse 
+181 "BBC_Scotland_Breakfast" 0.000000 0.000000 ellipse 
+182 "Wessex_Pharmaceutical" 0.000000 0.000000 ellipse 
+183 "Food_&_Farming_Industry_Awards" 0.000000 0.000000 ellipse 
+184 "Duncan_Alan" 0.000000 0.000000 ellipse 
+185 "Tce_Club_Luncheon" 0.000000 0.000000 ellipse 
+186 "AXA_Art" 0.000000 0.000000 ellipse 
+187 "Third_Term" 0.000000 0.000000 ellipse 
+188 "The_Open_University" 0.000000 0.000000 ellipse 
+189 "Snowdon_Award_Scheme" 0.000000 0.000000 ellipse 
+190 "Summer_Reception" 0.000000 0.000000 ellipse 
+191 "Tami_Mark" 0.000000 0.000000 ellipse 
+192 "Trett_Consulting" 0.000000 0.000000 ellipse 
+193 "Harris_Evan" 0.000000 0.000000 ellipse 
+194 "Smith_Geraldine" 0.000000 0.000000 ellipse 
+195 "Sherlock_Holmes_Society" 0.000000 0.000000 ellipse 
+196 "RSPCA" 0.000000 0.000000 ellipse 
+197 "Ennis_Jeff" 0.000000 0.000000 ellipse 
+198 "British-Japanese_Parliamentary_Group" 0.000000 0.000000 ellipse 
+199 "Anglo-Somali_Society_Tea_Party" 0.000000 0.000000 ellipse 
+200 "EDF_Energy" 0.000000 0.000000 ellipse 
+201 "GMB" 0.000000 0.000000 ellipse 
+202 "Daycare_Trust" 0.000000 0.000000 ellipse 
+203 "BBC" 0.000000 0.000000 ellipse 
+204 "Parliamentary_Scientific_Committee" 0.000000 0.000000 ellipse 
+205 "Butterfill_John" 0.000000 0.000000 ellipse 
+206 "Portcullis_Dinning_Club" 0.000000 0.000000 ellipse 
+207 "EECA" 0.000000 0.000000 ellipse 
+208 "Spotlight_Reception" 0.000000 0.000000 ellipse 
+209 "Vaz_Keith" 0.000000 0.000000 ellipse 
+210 "Epsom_&_Ewell_Cons_Assoc" 0.000000 0.000000 ellipse 
+211 "Networking_for_Industry" 0.000000 0.000000 ellipse 
+212 "Old_Millhillians_Club" 0.000000 0.000000 ellipse 
+213 "Jack_Michael" 0.000000 0.000000 ellipse 
+214 "GFTU" 0.000000 0.000000 ellipse 
+215 "Timms_Stephen" 0.000000 0.000000 ellipse 
+216 "Build_Africa_Reception" 0.000000 0.000000 ellipse 
+217 "PUG" 0.000000 0.000000 ellipse 
+218 "Horwood_Martin" 0.000000 0.000000 ellipse 
+219 "Hewitt_Patricia" 0.000000 0.000000 ellipse 
+220 "The_British_Pain_Society" 0.000000 0.000000 ellipse 
+221 "SBB" 0.000000 0.000000 ellipse 
+222 "British_Japanese_Parliamentary_Group" 0.000000 0.000000 ellipse 
+223 "Mitchell_Austin" 0.000000 0.000000 ellipse 
+224 "European_Research_Group_Breakfast_Meeting" 0.000000 0.000000 ellipse 
+225 "Rayleigh_Westminster_Club" 0.000000 0.000000 ellipse 
+226 "Mates_Michael" 0.000000 0.000000 ellipse 
+227 "National_Osteoporosis_Society" 0.000000 0.000000 ellipse 
+228 "PAGB" 0.000000 0.000000 ellipse 
+229 "British_Airways" 0.000000 0.000000 ellipse 
+230 "3M_Company" 0.000000 0.000000 ellipse 
+231 "Love_Andrew" 0.000000 0.000000 ellipse 
+232 "Fitness_Industry_Association" 0.000000 0.000000 ellipse 
+233 "4th_July_dining_club" 0.000000 0.000000 ellipse 
+234 "Willott_Jenny" 0.000000 0.000000 ellipse 
+235 "Morley_Elliot" 0.000000 0.000000 ellipse 
+236 "Herbert_Nick" 0.000000 0.000000 ellipse 
+237 "NSPCC" 0.000000 0.000000 ellipse 
+238 "British_Veterinary_Association" 0.000000 0.000000 ellipse 
+239 "Saffron_Walden_Conservatives" 0.000000 0.000000 ellipse 
+240 "BAPG" 0.000000 0.000000 ellipse 
+241 "John_Innes_Centre" 0.000000 0.000000 ellipse 
+242 "Todd_Mark" 0.000000 0.000000 ellipse 
+243 "The_Beresford_Family_Society" 0.000000 0.000000 ellipse 
+244 "Taylor_Ian" 0.000000 0.000000 ellipse 
+245 "Westminster_Dng_Club" 0.000000 0.000000 ellipse 
+246 "Blaby_Cons_Assoc" 0.000000 0.000000 ellipse 
+247 "Autism_Speaks_Networking_Reception" 0.000000 0.000000 ellipse 
+248 "Brazier_J.W.H" 0.000000 0.000000 ellipse 
+249 "Hughes_Simon" 0.000000 0.000000 ellipse 
+250 "BAPW" 0.000000 0.000000 ellipse 
+251 "Folkestone_&_Hythe_Conservatives" 0.000000 0.000000 ellipse 
+252 "Sanders_Adrian" 0.000000 0.000000 ellipse 
+253 "Taylor_Richard" 0.000000 0.000000 ellipse 
+254 "Baldry_Tony" 0.000000 0.000000 ellipse 
+255 "Bottomley_Virginia" 0.000000 0.000000 ellipse 
+256 "Howarth_Gerald" 0.000000 0.000000 ellipse 
+257 "Curtis-Thomas_Claire" 0.000000 0.000000 ellipse 
+258 "Society_of_Conservative_Lawyers" 0.000000 0.000000 ellipse 
+259 "Illsley_Eric" 0.000000 0.000000 ellipse 
+260 "Sport_of_Racing_Pigeon" 0.000000 0.000000 ellipse 
+261 "China_APPG_Sponsors'_Dinner" 0.000000 0.000000 ellipse 
+262 "Lidington_David" 0.000000 0.000000 ellipse 
+263 "Jazz_in_the_House" 0.000000 0.000000 ellipse 
+264 "BHTA" 0.000000 0.000000 ellipse 
+265 "Associate_Parliamentary_Aerospace_Group" 0.000000 0.000000 ellipse 
+266 "Fire_Safety_Group" 0.000000 0.000000 ellipse 
+267 "Levitt_Tom" 0.000000 0.000000 ellipse 
+268 "Jenkin_Hon Bernard" 0.000000 0.000000 ellipse 
+269 "Murrison_Andrew" 0.000000 0.000000 ellipse 
+270 "Gilroy_Linda" 0.000000 0.000000 ellipse 
+271 "Davies_Quentin" 0.000000 0.000000 ellipse 
+272 "McFall_John" 0.000000 0.000000 ellipse 
+273 "Lewis_Julian" 0.000000 0.000000 ellipse 
+274 "Hammond_Philip" 0.000000 0.000000 ellipse 
+275 "BBC_Wales" 0.000000 0.000000 ellipse 
+276 "Lancashire_Colleges_Dinner" 0.000000 0.000000 ellipse 
+277 "HPBC_Lunch" 0.000000 0.000000 ellipse 
+278 "P_U_G" 0.000000 0.000000 ellipse 
+279 "Rarer_Cancers_Forum" 0.000000 0.000000 ellipse 
+280 "Clappison_James" 0.000000 0.000000 ellipse 
+281 "APPCGG" 0.000000 0.000000 ellipse 
+282 "Blizzard_Robert" 0.000000 0.000000 ellipse 
+283 "Tynan_Bill" 0.000000 0.000000 ellipse 
+284 "APHG" 0.000000 0.000000 ellipse 
+285 "Knole_Club" 0.000000 0.000000 ellipse 
+286 "Ward_Claire" 0.000000 0.000000 ellipse 
+287 "BM_Trada" 0.000000 0.000000 ellipse 
+288 "Plant_Science_Discussion_Dinner" 0.000000 0.000000 ellipse 
+289 "Gray_James" 0.000000 0.000000 ellipse 
+290 "Iddon_Brian" 0.000000 0.000000 ellipse 
+291 "1964_Club" 0.000000 0.000000 ellipse 
+292 "Lord_Michael" 0.000000 0.000000 ellipse 
+293 "Gibb_Nicolas" 0.000000 0.000000 ellipse 
+294 "McIntosh_Anne" 0.000000 0.000000 ellipse 
+295 "Harvey_Nick" 0.000000 0.000000 ellipse 
+296 "Barron_Kevin" 0.000000 0.000000 ellipse 
+297 "Keen_Ann Lloyd" 0.000000 0.000000 ellipse 
+298 "Spiders_Club" 0.000000 0.000000 ellipse 
+299 "Whittingdale_John" 0.000000 0.000000 ellipse 
+300 "Cricket_Dinner" 0.000000 0.000000 ellipse 
+301 "Tce_Club" 0.000000 0.000000 ellipse 
+302 "Ryan_Joan" 0.000000 0.000000 ellipse 
+303 "Goodman_Paul" 0.000000 0.000000 ellipse 
+304 "Lait_Jacqui" 0.000000 0.000000 ellipse 
+305 "Clark_Helen" 0.000000 0.000000 ellipse 
+306 "Harborough_Conservatives" 0.000000 0.000000 ellipse 
+307 "Iranian_New_Year" 0.000000 0.000000 ellipse 
+308 "Robert_Jackson_MP" 0.000000 0.000000 ellipse 
+309 "Fabricant_Michael" 0.000000 0.000000 ellipse 
+310 "Oxford_University_Society" 0.000000 0.000000 ellipse 
+311 "Perham_Linda" 0.000000 0.000000 ellipse 
+312 "Bus_Action_on_Skills" 0.000000 0.000000 ellipse 
+313 "ENCAMS" 0.000000 0.000000 ellipse 
+*edges
+1 284 1.000000 
+1 211 1.000000 
+1 93 1.000000 
+1 115 1.000000 
+1 129 1.000000 
+2 60 1.000000 
+2 109 1.000000 
+2 217 1.000000 
+2 203 1.000000 
+3 200 1.000000 
+3 279 1.000000 
+3 134 1.000000 
+5 240 1.000000 
+6 211 1.000000 
+6 220 1.000000 
+6 103 1.000000 
+6 129 1.000000 
+6 278 1.000000 
+7 174 1.000000 
+7 245 1.000000 
+9 217 1.000000 
+9 278 1.000000 
+9 24 1.000000 
+9 204 1.000000 
+12 233 1.000000 
+12 148 1.000000 
+12 179 1.000000 
+12 187 1.000000 
+12 44 1.000000 
+13 193 1.000000 
+14 199 1.000000 
+14 77 1.000000 
+15 221 1.000000 
+15 187 1.000000 
+15 37 1.000000 
+15 82 1.000000 
+15 308 1.000000 
+16 107 1.000000 
+19 150 1.000000 
+19 277 1.000000 
+23 131 1.000000 
+23 48 1.000000 
+23 37 1.000000 
+24 217 1.000000 
+24 278 1.000000 
+27 245 1.000000 
+33 61 1.000000 
+35 96 1.000000 
+35 211 1.000000 
+35 228 1.000000 
+35 138 1.000000 
+35 140 1.000000 
+36 117 1.000000 
+36 85 1.000000 
+37 221 1.000000 
+37 63 1.000000 
+37 281 1.000000 
+37 72 1.000000 
+37 187 1.000000 
+37 82 1.000000 
+37 308 1.000000 
+37 141 1.000000 
+37 307 1.000000 
+40 227 1.000000 
+43 152 1.000000 
+43 239 1.000000 
+43 121 1.000000 
+43 300 1.000000 
+44 233 1.000000 
+44 179 1.000000 
+44 187 1.000000 
+44 148 1.000000 
+46 243 1.000000 
+46 287 1.000000 
+46 95 1.000000 
+47 232 1.000000 
+47 146 1.000000 
+47 75 1.000000 
+48 131 1.000000 
+48 158 1.000000 
+48 84 1.000000 
+48 89 1.000000 
+49 147 1.000000 
+55 195 1.000000 
+55 298 1.000000 
+55 185 1.000000 
+55 301 1.000000 
+56 80 1.000000 
+56 63 1.000000 
+57 187 1.000000 
+59 127 1.000000 
+59 230 1.000000 
+59 111 1.000000 
+59 113 1.000000 
+59 207 1.000000 
+59 94 1.000000 
+59 210 1.000000 
+59 291 1.000000 
+59 187 1.000000 
+60 217 1.000000 
+60 203 1.000000 
+60 109 1.000000 
+63 80 1.000000 
+63 281 1.000000 
+64 187 1.000000 
+64 217 1.000000 
+71 306 1.000000 
+71 258 1.000000 
+72 307 1.000000 
+75 232 1.000000 
+75 146 1.000000 
+76 232 1.000000 
+77 199 1.000000 
+82 221 1.000000 
+82 187 1.000000 
+82 308 1.000000 
+84 158 1.000000 
+84 89 1.000000 
+85 117 1.000000 
+87 251 1.000000 
+89 158 1.000000 
+91 258 1.000000 
+93 284 1.000000 
+93 115 1.000000 
+93 211 1.000000 
+93 129 1.000000 
+94 230 1.000000 
+94 127 1.000000 
+94 187 1.000000 
+95 243 1.000000 
+95 287 1.000000 
+96 211 1.000000 
+96 228 1.000000 
+96 138 1.000000 
+96 140 1.000000 
+103 211 1.000000 
+103 220 1.000000 
+103 129 1.000000 
+103 278 1.000000 
+104 145 1.000000 
+106 187 1.000000 
+106 224 1.000000 
+109 217 1.000000 
+109 203 1.000000 
+111 291 1.000000 
+111 207 1.000000 
+111 113 1.000000 
+111 210 1.000000 
+113 291 1.000000 
+113 207 1.000000 
+113 210 1.000000 
+115 284 1.000000 
+115 211 1.000000 
+115 129 1.000000 
+119 151 1.000000 
+121 152 1.000000 
+121 239 1.000000 
+121 300 1.000000 
+127 230 1.000000 
+127 187 1.000000 
+129 163 1.000000 
+129 278 1.000000 
+129 220 1.000000 
+129 284 1.000000 
+129 211 1.000000 
+129 178 1.000000 
+130 192 1.000000 
+134 200 1.000000 
+134 279 1.000000 
+136 186 1.000000 
+136 187 1.000000 
+138 211 1.000000 
+138 228 1.000000 
+138 140 1.000000 
+139 217 1.000000 
+140 211 1.000000 
+140 228 1.000000 
+143 231 1.000000 
+146 232 1.000000 
+148 233 1.000000 
+148 187 1.000000 
+148 179 1.000000 
+150 277 1.000000 
+152 239 1.000000 
+152 300 1.000000 
+160 187 1.000000 
+163 178 1.000000 
+170 171 1.000000 
+170 266 1.000000 
+171 266 1.000000 
+172 232 1.000000 
+174 245 1.000000 
+176 236 1.000000 
+177 223 1.000000 
+179 233 1.000000 
+179 187 1.000000 
+185 195 1.000000 
+185 298 1.000000 
+185 301 1.000000 
+186 187 1.000000 
+187 233 1.000000 
+187 230 1.000000 
+187 217 1.000000 
+187 221 1.000000 
+187 224 1.000000 
+187 308 1.000000 
+188 217 1.000000 
+191 256 1.000000 
+195 298 1.000000 
+195 301 1.000000 
+198 222 1.000000 
+200 279 1.000000 
+201 214 1.000000 
+203 217 1.000000 
+207 291 1.000000 
+207 210 1.000000 
+210 291 1.000000 
+211 278 1.000000 
+211 220 1.000000 
+211 284 1.000000 
+211 228 1.000000 
+217 278 1.000000 
+220 278 1.000000 
+221 308 1.000000 
+239 300 1.000000 
+241 288 1.000000 
+243 287 1.000000 
+256 270 1.000000 
+256 272 1.000000 
+258 306 1.000000 
+265 276 1.000000 
+270 272 1.000000 
+298 301 1.000000 
