@@ -95,6 +95,7 @@ row.names(words.df)<-1:nrow(words.df)
 # Subset of words
 words.subset<-subset(words.df, freq>quantile(words.df$freq)[2]) # first quantile
 
+# I can haz viz?
 polisci.words<-ggplot(words.subset, aes(x=x.pos, y=y.pos))+geom_text(aes(size=log10(freq), label=words.subset$term, alpha=.75, color=as.factor(cluster)))+
     theme_bw()+scale_size(legend=FALSE)+scale_alpha(legend=FALSE)+xlab("")+ylab("")+scale_color_brewer(pal="Dark2", legend=FALSE)+
     scale_x_continuous(breaks=c(min(words.subset$x.pos), max(words.subset$x.pos)), labels=c("",""))+
