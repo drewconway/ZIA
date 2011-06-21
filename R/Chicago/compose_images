@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in {1..358}
+    do
+        convert -size 3300x3175 xc:white images/$i.png
+        composite -geometry +0+0 maps/$i.png images/$i.png images/$i.png
+        composite -geometry +0+2575 timelines/$i\_time.png images/$i.png images/$i.png
+done
+
