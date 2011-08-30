@@ -155,7 +155,7 @@ Finally, the `MAD` and `Median` provide a discrete ranking of the players.  Beca
 
 In the `images/` folder I have also generated one visualization of the data, called `hard_valution.png`
 
-<p align="center"><img src="https://github.com/drewconway/ZIA/raw/master/R/SampleSpace/images/hard_valuation.png" width=700 alt="Most Variant Player Rankings in 2011 Fantasy Football"></p>
+<p align="center"><a href="https://github.com/drewconway/ZIA/raw/master/R/SampleSpace/images/hard_valuation.png" target="_blank"><img src="https://github.com/drewconway/ZIA/raw/master/R/SampleSpace/images/hard_valuation.png" width=800 alt="Most Variant Player Rankings in 2011 Fantasy Football"></a></p>
 
 Using the MAD score as our measure of variance, the above visualization highlights the players in the 95th percentile of this statistics.  These are the players that have the highest variance in their ranking.  Along the x-axis are the players median ranks, and along the y-axis as the MAD scores.  What is nice about this is we can see how uncertainty peaks between draft selections 80 and 100, then sharply declines.  This makes sense, as the best and worst players are likely well-known, but those with risk and upside are drafted in the middle rounds.
 
