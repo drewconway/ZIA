@@ -149,14 +149,25 @@ The first three columns provide identifying information about the players: name,
 
 The next column is `Freq`, and this tells you the percentage of drafts from the total mined wherein the player was drafted.  Obviously, looking at the top 10 picks, all of these players were drafted in 100% of the drafts.  But, as you look further down the rankings you will notice that many players were not.  For example, Mark Sanchez (QB-NYJ) is ranked 125th overall but was only drafted in ~9% of the mock drafts (presumedly all Jets fans).  While Kyle Orton (QB-DEN) is ranked 127th overall, but was drafted in 100% of the mock drafts.  Something to keep in mind when making later round selections.
 
-Finally, the `MAD` and `Median` provide a discrete ranking of the players.  Because we are dealing with rankings, the median value can be easier to interpret because median have an inherent rank ordering.  Likewise `MAD` (median absolute deviation) provides a numeric estimate of the variance of that ranking.  Like standard deviation, the lower the MAD score, the less uncertainty the market has in the player's rank.
+Finally, the `MAD` and `Median` provide a discrete ranking of the players.  Because we are dealing with rankings, the median value can be easier to interpret because median have an inherent rank ordering.  Likewise `MAD` (median absolute deviation) provides a numeric estimate of the variance of that ranking.  Like standard deviation, the lower the MAD score, the less uncertainty the market has in the player's rank.  Note, both Arian Foster and Adrian Peterson have a median rank of 2, with identical MAD scores.  This reinforces out previous observation that the current market does not believe either is the clear #1.
 
 ## Analyzing Uncertainty ##
 
 In the `images/` folder I have also generated one visualization of the data, called `hard_valution.png`
 
+<p align="center"><img src="https://github.com/drewconway/ZIA/raw/master/R/SampleSpace/images/hard_valuation.png" width=700 alt="Most Variant Player Rankings in 2011 Fantasy Football"></p>
+
+Using the MAD score as our measure of variance, the above visualization highlights the players in the 95th percentile of this statistics.  These are the players that have the highest variance in their ranking.  Along the x-axis are the players median ranks, and along the y-axis as the MAD scores.  What is nice about this is we can see how uncertainty peaks between draft selections 80 and 100, then sharply declines.  This makes sense, as the best and worst players are likely well-known, but those with risk and upside are drafted in the middle rounds.
+
+This image was generated at about 12:00PM (EDT) on August 30, 2011, and you can see from it the timing of your analysis makes a big difference in the market's uncertainty in a player's rank.  If we look at the names highlighted above we see that we see many players who have had mediocre pre-seasons, or are on new teams where their performance may be in question.  
+
+**Because the data source is constantly changing, no two tuns of this code will produce exactly the same results**.  You will find, however, that after multiple runs many of the same names keep popping up.  In this case: Ben Roethlisbeger, Mercedes Lewis, Rob Gronkowski, and C.J. Spiller were all players who were consistently among those with the most uncertainty in the 2011 fantasy football season.
 
 
 ### Bonus Data ###
 
 In the `Players/` folder you will find separate CSV files for 2010 player statistics by position.  This data is provided by [http://www.advancednflstats.com/](http://www.advancednflstats.com/).
+
+### Running Code after 2011 ###
+
+Please note that this code may break if you attempt to run it after the 2011 season.  The supporting websites may change their policies or formats, which could cause the code to break.  In that case, you're on your own!
