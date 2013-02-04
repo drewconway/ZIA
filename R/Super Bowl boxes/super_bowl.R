@@ -17,6 +17,8 @@
 library(ggplot2)
 library(RCurl)
 library(XML)
+library(plyr)
+library(reshape)
 
 # A function that converts a given integer into its Roman Numeral equivalent
 to.RomanNumeral<-function(x) {
@@ -72,8 +74,9 @@ get.probs<-function(score.df) {
     return(prob.df)
 }
 
-# There have been 45 Super Bowls
-bowls<-lapply(1:45, to.RomanNumeral)
+# There have been 47 Super Bowls
+bowl.number<-47
+bowls<-lapply(1:bowl.number, to.RomanNumeral)
 
 # Create data frame of all Super Bowl scores
 scores.list<-lapply(bowls, get.scores)
@@ -91,7 +94,7 @@ quarters.list<-lapply(1:nrow(scores.df), function(i) c(scores.df[i,2],sum(scores
 quarters.df<-as.data.frame(do.call(rbind, quarters.list))
 
 # Final data set
-super.df<-cbind(scores.df, quarters.df,rep(as.factor(c("Home","Away")),45))
+super.df<-cbind(scores.df, quarters.df,rep(as.factor(c("Home","Away")),bowl.number))
 names(super.df)<-c("Team","Q1","Q2","Q3","Q4","Total","SB","Q1T","Q2T","Q3T","Type")
 
 # Get digit count totals in workable data frame for visualization
@@ -132,31 +135,28 @@ boxes$Q4<-melt(q4.probs)$value
 # Create a heatmap of probability of winning given different digit combinations by quarter
 q1.heatmap<-ggplot(boxes, aes(xmin=x,xmax=x+1,ymin=y,ymax=y+1))+geom_rect(aes(color="white", fill=Q1))+
     scale_fill_gradient(limits=c(0,.047), low="lightgrey", high="darkred", name="Pr(Winning)")+
-    scale_color_manual(values=c("white"="white"), legend=FALSE)+theme_bw()+
+    scale_color_manual(values=c("white"="white"), guide="none")+theme_bw()+
     scale_x_continuous(breaks=.5:9.5,labels=0:9)+scale_y_continuous(breaks=.5:9.5,labels=0:9)+
-    xlab("Home Team")+ylab("Away Team")+opts(title="Heat Map of Win Probabilties -- First Quater")
+    xlab("Home Team")+ylab("Away Team")+labs(title="Heat Map of Win Probabilities -- First Quarter")
 ggsave(plot=q1.heatmap, filename="images/q1_heatmap.png", height=12, width=12)
 
 q2.heatmap<-ggplot(boxes, aes(xmin=x,xmax=x+1,ymin=y,ymax=y+1))+geom_rect(aes(color="white", fill=Q2))+
     scale_fill_gradient(limits=c(0,.047), low="lightgrey", high="darkred", name="Pr(Winning)")+
-    scale_color_manual(values=c("white"="white"), legend=FALSE)+theme_bw()+
+    scale_color_manual(values=c("white"="white"), guide="none")+theme_bw()+
     scale_x_continuous(breaks=.5:9.5,labels=0:9)+scale_y_continuous(breaks=.5:9.5,labels=0:9)+
-    xlab("Home Team")+ylab("Away Team")+opts(title="Heat Map of Win Probabilties -- Half Time")
+    xlab("Home Team")+ylab("Away Team")+labs(title="Heat Map of Win Probabilities -- Half Time")
 ggsave(plot=q2.heatmap, filename="images/q2_heatmap.png", height=12, width=12)
 
 q3.heatmap<-ggplot(boxes, aes(xmin=x,xmax=x+1,ymin=y,ymax=y+1))+geom_rect(aes(color="white", fill=Q3))+
     scale_fill_gradient(limits=c(0,.047), low="lightgrey", high="darkred", name="Pr(Winning)")+
-    scale_color_manual(values=c("white"="white"), legend=FALSE)+theme_bw()+
+    scale_color_manual(values=c("white"="white"), guide="none")+theme_bw()+
     scale_x_continuous(breaks=.5:9.5,labels=0:9)+scale_y_continuous(breaks=.5:9.5,labels=0:9)+
-    xlab("Home Team")+ylab("Away Team")+opts(title="Heat Map of Win Probabilties -- Third Quarter")
+    xlab("Home Team")+ylab("Away Team")+labs(title="Heat Map of Win Probabilities -- Third Quarter")
 ggsave(plot=q3.heatmap, filename="images/q3_heatmap.png", height=12, width=12)
 
 q4.heatmap<-ggplot(boxes, aes(xmin=x,xmax=x+1,ymin=y,ymax=y+1))+geom_rect(aes(color="white", fill=Q4))+
     scale_fill_gradient(limits=c(0,.047), low="lightgrey", high="darkred", name="Pr(Winning)")+
-    scale_color_manual(values=c("white"="white"), legend=FALSE)+theme_bw()+
+    scale_color_manual(values=c("white"="white"), guide="none")+theme_bw()+
     scale_x_continuous(breaks=.5:9.5,labels=0:9)+scale_y_continuous(breaks=.5:9.5,labels=0:9)+
-    xlab("Home Team")+ylab("Away Team")+opts(title="Heat Map of Win Probabilties -- Final")
+    xlab("Home Team")+ylab("Away Team")+labs(title="Heat Map of Win Probabilities -- Final")
 ggsave(plot=q4.heatmap, filename="images/q4_heatmap.png", height=12, width=12)
-
-
-
