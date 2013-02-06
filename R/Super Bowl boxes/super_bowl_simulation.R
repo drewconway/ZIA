@@ -70,12 +70,14 @@ colnames(results)<-as.character(nsims)
 for(i in 1:length(nsims)){
   results[,i]<-run.sim(nsims[i])
 }
+profits<-results[,length(nsims)]
+#roi<-profits/(10*1:100)
 #plot of expected profits for the 10,000 simulations experiment shows high variability:
-barplot(results[,length(nsims)],xlab='Number of Squares Chosen',ylab='Average Profit',main="Unpredictable variation in Profits")
-scatter.smooth(1:100,results[,length(nsims)],xlab="Number of Squares Purchased",ylab="Average Profit",main="Unpredictable variation in Profits")
+barplot(profits,xlab='Number of Squares Chosen',ylab='Average Profit ($)',main="Unpredictable variation in Profits")
+scatter.smooth(1:100,profits,xlab="Number of Squares Purchased",ylab="Average Profit ($)",main="Unpredictable variation in Profits")
 
 #but note that as the number of experiments run increases, the range of variation between maximum and minimum profits tends toward zero:
 
-plot(log10(nsims),apply(results,2,max),type='b',ylim=c(min(results),max(results)),ylab="Maximum and Minimum Average Profits",xlab="Number of experiments run, log scale",main="Expected Profits squeezed to zero")
+plot(log10(nsims),apply(results,2,max),type='b',ylim=c(min(results),max(results)),ylab="Maximum and Minimum Average Profits",xlab="Number of simulations run, log scale",main="Expected Profits squeezed to zero")
 lines(log10(nsims),apply(results,2,min),type='b')
 abline(0,0)
