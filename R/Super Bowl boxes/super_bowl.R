@@ -5,7 +5,7 @@
 # Purpose:         Gather and manipulate historic Super Bowl score data
 # Data Used:       Wikipedia Super Bowl data
 # Packages Used:   ggplot2, RCurl, XML
-# Output File:    
+# Output File:     q1probs.csv, q2probs.csv, q3probs.csv, q4probs.csv
 # Data Output:     
 # Machine:         Drew Conway's MacBook Pro
 
@@ -41,7 +41,7 @@ to.RomanNumeral<-function(x) {
     }
 }
 
-# Function returns quater scores from Wikipedia Super Bown pages
+# Function returns quater scores from Wikipedia Super Bowl pages
 get.scores<-function(numeral) {
     # Base URL for Wikipedia 
     wp.url<-getURL(paste("http://en.wikipedia.org/wiki/Super_Bowl_",numeral,sep=""))
@@ -138,79 +138,31 @@ q1.heatmap<-ggplot(boxes, aes(xmin=x,xmax=x+1,ymin=y,ymax=y+1))+geom_rect(aes(co
     scale_color_manual(values=c("white"="white"), guide="none")+theme_bw()+
     scale_x_continuous(breaks=.5:9.5,labels=0:9)+scale_y_continuous(breaks=.5:9.5,labels=0:9)+
     xlab("Home Team")+ylab("Away Team")+labs(title="Heat Map of Win Probabilities -- First Quarter")
-#ggsave(plot=q1.heatmap, filename="images/q1_heatmap.png", height=12, width=12)
+ggsave(plot=q1.heatmap, filename="images/q1_heatmap.png", height=12, width=12)
 
 q2.heatmap<-ggplot(boxes, aes(xmin=x,xmax=x+1,ymin=y,ymax=y+1))+geom_rect(aes(color="white", fill=Q2))+
     scale_fill_gradient(limits=c(0,.047), low="lightgrey", high="darkred", name="Pr(Winning)")+
     scale_color_manual(values=c("white"="white"), guide="none")+theme_bw()+
     scale_x_continuous(breaks=.5:9.5,labels=0:9)+scale_y_continuous(breaks=.5:9.5,labels=0:9)+
     xlab("Home Team")+ylab("Away Team")+labs(title="Heat Map of Win Probabilities -- Half Time")
-#ggsave(plot=q2.heatmap, filename="images/q2_heatmap.png", height=12, width=12)
+ggsave(plot=q2.heatmap, filename="images/q2_heatmap.png", height=12, width=12)
 
 q3.heatmap<-ggplot(boxes, aes(xmin=x,xmax=x+1,ymin=y,ymax=y+1))+geom_rect(aes(color="white", fill=Q3))+
     scale_fill_gradient(limits=c(0,.047), low="lightgrey", high="darkred", name="Pr(Winning)")+
     scale_color_manual(values=c("white"="white"), guide="none")+theme_bw()+
     scale_x_continuous(breaks=.5:9.5,labels=0:9)+scale_y_continuous(breaks=.5:9.5,labels=0:9)+
     xlab("Home Team")+ylab("Away Team")+labs(title="Heat Map of Win Probabilities -- Third Quarter")
-#ggsave(plot=q3.heatmap, filename="images/q3_heatmap.png", height=12, width=12)
+ggsave(plot=q3.heatmap, filename="images/q3_heatmap.png", height=12, width=12)
 
 q4.heatmap<-ggplot(boxes, aes(xmin=x,xmax=x+1,ymin=y,ymax=y+1))+geom_rect(aes(color="white", fill=Q4))+
     scale_fill_gradient(limits=c(0,.047), low="lightgrey", high="darkred", name="Pr(Winning)")+
     scale_color_manual(values=c("white"="white"), guide="none")+theme_bw()+
     scale_x_continuous(breaks=.5:9.5,labels=0:9)+scale_y_continuous(breaks=.5:9.5,labels=0:9)+
     xlab("Home Team")+ylab("Away Team")+labs(title="Heat Map of Win Probabilities -- Final")
-#ggsave(plot=q4.heatmap, filename="images/q4_heatmap.png", height=12, width=12)
+ggsave(plot=q4.heatmap, filename="images/q4_heatmap.png", height=12, width=12)
 
-###########################################################
-#Simulating the probability of success based on the number of squares chosen.
-#By Will Townes (will.townes@gmail.com)
-
-#we don't care at this point about the identities of the squares (only care about the chance of winning as a function of the number of squares randomly chosen), so we can flatten quarterly probabilities into vectors and stack in data frame
-probs<-as.data.frame(lapply(list(q1.probs,q2.probs,q3.probs,q4.probs),function(q){as.numeric(c(q,recursive=T))}))
-colnames(probs)<-c('q1','q2','q3','q4')
-cdfs<-cumsum(probs)
-rq<-function(n,cdf){
-    #pseudo random variate based on the quarterly probability of "winning" as defined by the empirical "cdf" vector. Returns a vector of length n. Each item in the vector is an index of a single square in the super bowl card
-    cdf<-sort(cdf) #cdf must be sorted in ascending order
-    u<-runif(n) #get uniform variates
-    res<-sapply(u,function(val){min(which(cdf>val))})
-    #res is a vector of length n. Each element is the value of the cdf whose probability is closest to the uniform variate but still greater than it (this is basically an inverse transformation from the uniform distribution into the empirical discrete probability distribution)
-    return(res)
-}
-rchoice<-function(){
-  #generates a list of samples of size 1,2,3,...100 chosen from the integers 1:100. Simulates choosing a certain number of squares from the board on a single super bowl.
-  res<-list()
-  rng<-1:100
-  for(j in rng){
-    res[[j]]<-sample(rng,j)
-  }
-  return(res)
-}
-getwinnings<-function(qwinners,choices,rewards){
-  #qwinners is a 4-vector of quarterly scores, choices is a 100-list of square choices, and rewards is a 4-vector assigning the revenue value of winning a particular quarter. Returns a 100-vector with the amount of revenue gained by each group of "k" square choices
-  winnings<-rep(0,100)
-  for(i in 1:4){
-    winners<-which(sapply(choices,function(squares){qwinners[i] %in% squares}))
-    winnings[winners]<-winnings[winners]+rewards[i]
-  }
-  return(winnings)  
-}
-run.sims<-function(nsims){
-  #runs the specified number of super bowl simulations and returns the expected profits for each choice of square count
-  winners<-apply(cdfs,2,FUN=function(cdf){rq(nsims,cdf)}) #simulate a bunch of games and see the predicted scores at the end of each quarter of each game. A data frame of same dimension as cdfs
-  squarecost<-10
-  rewards<-squarecost*c(20,20,20,40)
-  profit<-rep(0,100)
-  costs<-seq(1,100)*squarecost
-  for(sim in 1:nsims){
-    choices<-rchoice()
-    profit<-profit-costs+getwinnings(winners[sim,],choices,rewards)
-  }  
-  return(profit)
-}
-for(i in 1:10){
-  profit<-run.sims(1000)
-  barplot(profit)
-  which(profit==max(profit))
-  which(profit==min(profit))  
-}
+### Store quarterly probabilities as local CSV so they can be used again without having to re-download from the web.
+write.csv(q1.probs,"q1.probs.csv",row.names=F)
+write.csv(q2.probs,"q2.probs.csv",row.names=F)
+write.csv(q3.probs,"q3.probs.csv",row.names=F)
+write.csv(q4.probs,"q4.probs.csv",row.names=F)
