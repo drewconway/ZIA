@@ -83,11 +83,11 @@ palin.df<-transform(palin.df, Spacing=palin.optim)
 equal.df$Spacing<-as.vector(equal.spacing)
 
 ### Step 3: Create visualization
-tucson.cloud<-ggplot(obama.df, aes(x=freq.dif, y=Spacing))+geom_text(aes(size=obama.txt, label=row.names(obama.df), colour=freq.dif))+
+tucson.cloud <- ggplot(obama.df, aes(x=freq.dif, y=Spacing))+geom_text(aes(size=obama.txt, label=row.names(obama.df), colour=freq.dif))+
     geom_text(data=palin.df, aes(x=freq.dif, y=Spacing, label=row.names(palin.df), size=palin.txt, color=freq.dif))+
     geom_text(data=equal.df, aes(x=freq.dif, y=Spacing, label=row.names(equal.df), size=obama.txt, color=freq.dif))+
-    scale_size(to=c(3,11), name="Word Frequency")+scale_colour_gradient(low="darkred", high="darkblue", legend=FALSE)+
+    scale_size(range=c(3,11), name="Word Frequency")+scale_colour_gradient(low="darkred", high="darkblue", guide="none")+
     scale_x_continuous(breaks=c(min(palin.df$freq.dif),0,max(obama.df$freq.dif)),labels=c("Said More by Palin","Said Equally","Said More by Obama"))+
     scale_y_continuous(breaks=c(0),labels=c(""))+xlab("")+ylab("")+theme_bw()+
-    opts(panel.grid.major=theme_blank(),panel.grid.minor=theme_blank(), title="Word Cloud 2.0, Tucson Shooting Speeches (Obama vs. Palin)")
-ggsave(plot=tuscon.cloud,filename="tucson_cloud.png",width=13,height=7)
+    theme(panel.grid.major=element_blank(),panel.grid.minor=element_blank(), title=element_text("Word Cloud 2.0, Tucson Shooting Speeches (Obama vs. Palin)"))
+ggsave(plot=tucson.cloud,filename="tucson_cloud.png",width=13,height=7)
