@@ -41,9 +41,9 @@ get.seeds<-function(url,rounds, humans) {
     return(fit.drafts$DraftID)
 }
 
-get.df<-function(draft.id,num.teams,rounds) {
 # Retruns draft data as properly formatted data frame
-    draft.table<-readHTMLTable(paste(base.url,draft.id,sep=""),header=1:num.teams+1)
+get.df<-function(draft.id,num.teams,rounds) {
+    draft.table<-readHTMLTable(paste(base.url,draft.id,sep=""),header=1:num.teams+1,,stringsAsFactors=FALSE)$draftboard
     draft.order<-t(do.call(cbind,draft.table))
     draft.order<-draft.order[1:num.teams+1,]
     # Melt data into draft order
@@ -140,5 +140,6 @@ value.plot<-value.plot+xlab("Median Player Draft Position")+ylab("Median Absolut
     opts(title="Most Variant Player Rankings in 2011 Fantasy Football")+
     annotate("text",label="Only players with MAD in the \n95th percentile are labeled",colour="darkred",x=20,y=40)+
     scale_colour_manual(legend=FALSE,values=c("red"="darkred"))+scale_alpha(legend=FALSE)+scale_size_continuous(legend=FALSE)
+value.plot
 ggsave(plot=value.plot,filename="images/hard_valuation.png",height=7,width=10,dpi=120)
 
