@@ -22,8 +22,8 @@ library(reshape)
 ### Draft specific vars
 num.teams<-10           # Number of teams in your league
 rounds<-15              # Number of rounds completed, should not change (15 standard num to complete draft for 10 teams)
-num.obs<-200            # Number of drafts to scrape and parse
-humans <- 10				# Number of human drafters, in my case I want at least half humans
+num.obs<-500            # Number of drafts to scrape and parse
+humans <- 5				# Number of human drafters, in my case I want at least half humans
 
 ### URL vars
 base.url<-"http://fantasyfootballcalculator.com/draft/"
@@ -40,7 +40,6 @@ get.seeds<-function(url,rounds, humans) {
     fit.drafts<-subset(seed.drafts, RoundsCompleted == rounds & Humans >= humans)
     return(fit.drafts$DraftID)
 }
-
 
 # Retruns draft data as properly formatted data frame
 get.df<-function(draft.id,num.teams,rounds) {
@@ -133,7 +132,7 @@ for(p in positions) {
 ### Visualizations
 
 # One image to show players most difficult to evaluate
-ex.mad<-quantile(drafts.stats$MAD,.8)
+ex.mad<-quantile(drafts.stats$MAD,.95)
 value.plot<-ggplot(subset(drafts.stats,drafts.stats$MAD>=ex.mad),aes(Median,MAD))+geom_text(aes(label=Player,alpha=.85,colour="red",size=3.5),
     position=position_jitter(w=4,h=2))
 value.plot<-value.plot+geom_point(data=subset(drafts.stats,drafts.stats$MAD<ex.mad))+stat_smooth(data=drafts.stats,aes(Median,MAD))+theme_bw()
