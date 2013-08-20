@@ -22,8 +22,8 @@ library(reshape)
 ### Draft specific vars
 num.teams<-10           # Number of teams in your league
 rounds<-15              # Number of rounds completed, should not change (15 standard num to complete draft for 10 teams)
-num.obs<-500            # Number of drafts to scrape and parse
-humans <- 5				# Number of human drafters, in my case I want at least half humans
+num.obs<-200            # Number of drafts to scrape and parse
+humans <- 10				# Number of human drafters, in my case I want at least half humans
 
 ### URL vars
 base.url<-"http://fantasyfootballcalculator.com/draft/"
@@ -41,9 +41,10 @@ get.seeds<-function(url,rounds, humans) {
     return(fit.drafts$DraftID)
 }
 
-get.df<-function(draft.id,num.teams,rounds) {
+
 # Retruns draft data as properly formatted data frame
-    draft.table<-readHTMLTable(paste(base.url,draft.id,sep=""),header=1:num.teams+1)
+get.df<-function(draft.id,num.teams,rounds) {
+    draft.table<-readHTMLTable(paste(base.url,draft.id,sep=""),header=1:num.teams+1,,stringsAsFactors=FALSE)$draftboard
     draft.order<-t(do.call(cbind,draft.table))
     draft.order<-draft.order[1:num.teams+1,]
     # Melt data into draft order
@@ -132,7 +133,7 @@ for(p in positions) {
 ### Visualizations
 
 # One image to show players most difficult to evaluate
-ex.mad<-quantile(drafts.stats$MAD,.95)
+ex.mad<-quantile(drafts.stats$MAD,.8)
 value.plot<-ggplot(subset(drafts.stats,drafts.stats$MAD>=ex.mad),aes(Median,MAD))+geom_text(aes(label=Player,alpha=.85,colour="red",size=3.5),
     position=position_jitter(w=4,h=2))
 value.plot<-value.plot+geom_point(data=subset(drafts.stats,drafts.stats$MAD<ex.mad))+stat_smooth(data=drafts.stats,aes(Median,MAD))+theme_bw()
@@ -140,5 +141,6 @@ value.plot<-value.plot+xlab("Median Player Draft Position")+ylab("Median Absolut
     opts(title="Most Variant Player Rankings in 2011 Fantasy Football")+
     annotate("text",label="Only players with MAD in the \n95th percentile are labeled",colour="darkred",x=20,y=40)+
     scale_colour_manual(legend=FALSE,values=c("red"="darkred"))+scale_alpha(legend=FALSE)+scale_size_continuous(legend=FALSE)
+value.plot
 ggsave(plot=value.plot,filename="images/hard_valuation.png",height=7,width=10,dpi=120)
 
